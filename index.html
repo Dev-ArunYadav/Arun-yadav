@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="profile4.png" type="image" />
+    <title>Portfolio &vert; ~Arun Yadav</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="text/JavaScript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <Script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></Script>
+    <script src="https://kit.fontawesome.com/683a898100.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="signature1.png" class="logo" alt="Arun">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!--li><a href="#services">Service</a></li-->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!--p>Web Developer|Software Developer</p-->
+                <h1>Hello, my name is </br><span>Arun Yadav </span><br>And I'm a <span class="typing">Java Developer...</span></h1>
+            </div>
+        </div>
+    </header>
+    <!-----------------  About  ----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aboutme.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="p-title">I am a recent graduate with a strong passion for Java Programming and a commitment to learning and growing in the field. 
+                        With a solid foundation in Java programming and a dedication to writing clean, efficient code, 
+                        I'm eager to kick-start my career as a Java developer. 
+                        I'm actively seeking job opportunities where 
+                        I can apply my skills and contribute to innovative projects. 
+                        Let's connect and explore how I can be a valuable addition to your team.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>HTML | CSS | JavaScript </li>
+                            <li><span>Back-End</span><br>Java | J2EE | C | C++ | MySQL  </li>
+                            <li><span>Frameworks</span><br>Hibernate | Spring MVC, etc.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science(IT) </span><br>2020-2023<br>Completed graduation from University of Mumbai</li>
+                            <li><span>Higher Secondary Certificate</span><br>2018-2020<br>Completed 12th from Maharashtra State Board</li>
+                            <li><span>Secondary School Certificate</span><br>2017-2018<br>Completed 12th from Maharashtra State Board</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>CodeAlpha</span><br>11-12-2023 - 10-2-2024<br>Java Developer Intern this</li>
+                            <li><span>LetsGrowMore</span><br>12-10-2023 - 12-11-2023<br>Java Developer Fresher</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  ------------------ Services ---------------------   -->
+    <!--div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo quibusdam eum amet commodi
+                        repellendus dolores.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Soft Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo quibusdam eum amet commodi
+                        repellendus dolores.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo quibusdam eum amet commodi
+                        repellendus dolores.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div -->
+    <!--  ------------------ Portfolio ---------------------   -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="ltew.png" alt="">
+                    <div class="layer">
+                        <h3>LTEW - Web Application</h3>
+                        <p>
+                            LTEW is designed to minimize the time customers spend waiting in long lines,
+                            providing a faster and more efficient food ordering process.
+                            The application offers an array of cuisines and vendors, 
+                            allowing customers to enjoy a wider variety of food without the hassle of navigating multiple venues.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="profile2.1.png" alt="">
+                    <div class="layer">
+                        <h3>Personal - Portfolio</h3>
+                        <p>
+                            I have successfully developed my personal portfolio using HTML, CSS, and JavaScript. 
+                            This project allowed me to showcase my skills and accomplishments in a visually appealing and interactive manner. 
+                            Through the use of these technologies, I was able to create a responsive and dynamic website that reflects my unique personality and professional profile. 
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="notepad.png" alt="">
+                    <div class="layer">
+                        <h3>NotePad - Standalone</h3>
+                        <p>
+                            During my internship, I developed an application similar to Notepad, a simple text editor. 
+                            This application allows users to create, edit, and save plain text files. 
+                            It features a user-friendly interface with basic functionalities such as text formatting, copy-paste, and file management. 
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+        </div>
+    </div>
+    <!--  ------------------ Contact ---------------------   -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> yadavaarun01@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 7841039710</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100014346364748"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/dev.arahirs/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arun-yadav-343364278"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="Arun Yadav.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mrgwqyld" method="post" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Dev-Arun Yadav. All right reserved by dev.arahirs</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-150px";
+        }
+
+    </script>
+    <!--  https://script.google.com/macros/s/AKfycbwSlOGjOLNWuCfuTKwBgBnKKnPzM4Pwap6dJlN3nO5AOeE-1aWHXsEOu84bGxZ5Wg5U5w/exec   -->
+    
+    <script>
+    
+        const scriptURL = 'https://formspree.io/f/mrgwqyld'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'post', body: new FormData(form) })
+                .then(Response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+       
+    </script>
+    
+    <script>
+    // typing animation script\
+    var typed = new Typed(".typing",{
+    strings : ["Java Developer...", "Web Developer...", "Developer...", "Designer..."],
+    typeSpeed : 100,
+    backSpeed : 60,
+    loop : true
+}); 
+    </script>
+
+
+</body>
+
+</html>
